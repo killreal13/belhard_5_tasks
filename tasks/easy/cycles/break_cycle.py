@@ -26,15 +26,19 @@ def lets_break(n: int) -> int:
     """
     if n > 10:
         raise ValueError("Начальное значение больше 10")
+
+    current_n = n
+    counter = 0
+    while True:
+        if current_n >= 10:
+            return counter
+            break
+        current_n += 1
+        counter += 1
     # Текущее значение
     current_value = n
     # Счетчик итераций
     counter = 0
-    while True:
-        # TODO тут написать код
-        pass
-    return counter
-
 
 if __name__ == '__main__':
     assert lets_break(1) == 9

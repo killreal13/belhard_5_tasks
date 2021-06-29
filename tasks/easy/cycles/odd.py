@@ -18,7 +18,15 @@ some_list1 = []
 
 
 def odd_in_list(some_list: list) -> list:
+    pos = 0
     odd_list = []
+    for i in range(len(some_list)):
+        object_1 = some_list[i]
+        if isinstance(object_1, int) and object_1 % 2 == 0:
+            odd_list[pos] = object_1
+            pos += 1
+        else:
+            continue
     # TODO Написать свой код здесь
     return odd_list
 
