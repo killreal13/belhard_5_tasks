@@ -37,6 +37,7 @@ var2 = (-b - кв.корень(d))/2a
 - resolve_equation(-1, -2, 15) -> (64, 2, -5, 3)
 - resolve_equation(1, 12, 36) -> (0, 1, -6, None)
 """
+from math import sqrt
 
 
 def resolve_equation(a: float, b: float, c: float) -> tuple:
@@ -51,11 +52,23 @@ def resolve_equation(a: float, b: float, c: float) -> tuple:
      первый корень, второй корень)
     :rtype: tuple
     """
-    d = None
-    n_var = None
-    var1 = None
-    var2 = None
-    return d, n_var, var1, var2
+    d = b ** 2 - 4 * a * c
+    if d > 0:
+        var1 = (-b + sqrt(d)) / (2 * a)
+        var2 = (-b - sqrt(d)) / (2 * a)
+        n_var = 2
+        return d, n_var, var1, var2
+    elif d == 0:
+        var1 = (-b + sqrt(d)) / (2 * a)
+        var2 = (-b - sqrt(d)) / (2 * a)
+        n_var = 2
+        return d, n_var, var1, var2
+    else:
+        var1 = None
+        var2 = None
+        n_var = None
+        return d, n_var, var1, var2
+
 
 
 if __name__ == '__main__':
