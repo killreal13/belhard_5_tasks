@@ -31,7 +31,7 @@ def calculator(num1: int, num2: int, operation: str) -> Union[int, float, str]:
     elif operation == '/':
         return num1 / num2
     else:
-        return print('Неизвестная операция')
+        print('Неизвестная операция')
 
 
 if __name__ == '__main__':
