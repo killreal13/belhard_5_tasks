@@ -13,8 +13,10 @@ area_or_perimeter(4, 4) -> 16
 
 
 def square_or_rectangle(side1: int, side2: int) -> int:
-    result = None
-    return result
+    if side1 == side2:
+        return side1 ** 2
+    else:
+        return (side1 + side2) * 2
 
 
 if __name__ == '__main__':

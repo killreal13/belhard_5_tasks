@@ -46,12 +46,11 @@ def is_valid(check_string: str) -> bool:
         идентификатором и не ключевым словом или нет
     :rtype: bool
     """
-    if not check_string.isidentifier():
-        return False
-    elif iskeyword(check_string):
+    if not check_string.isidentifier() or iskeyword(check_string):
         return False
     else:
         return True
+
 
 if __name__ == '__main__':
     string = input('Введите строку для проверки: ')
