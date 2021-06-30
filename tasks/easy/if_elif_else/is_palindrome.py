@@ -30,6 +30,7 @@ def is_palindrome(check_str: str) -> bool:
     else:
         return False
 
+
 if __name__ == '__main__':
     c_str = input('Введите строку для проверки: ')
     print(f'Строка палиндром: {is_palindrome(c_str)}')
