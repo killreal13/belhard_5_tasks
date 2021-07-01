@@ -54,7 +54,7 @@ def random_gift():
 
 if __name__ == '__main__':
     print("Просим показать ребенка дневник\n")
-    #gift = random_gift()
+    # gift = random_gift()
     # TODO написать свой код здесь
     try:
         score = get_score()
@@ -71,4 +71,3 @@ if __name__ == '__main__':
         praise(random_gift())
     finally:
         cook_dinner()
-

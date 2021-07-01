@@ -70,7 +70,6 @@ def resolve_equation(a: float, b: float, c: float) -> tuple:
         return d, n_var, var1, var2
 
 
-
 if __name__ == '__main__':
     print('Решатель квадратных уравнений: ax2 + bx + c = 0')
     a_val = float(input('Введите a: '))

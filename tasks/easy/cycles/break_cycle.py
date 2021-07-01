@@ -40,6 +40,7 @@ def lets_break(n: int) -> int:
     # Счетчик итераций
     counter = 0
 
+
 if __name__ == '__main__':
     assert lets_break(1) == 9
     assert lets_break(5) == 5
