@@ -3,10 +3,16 @@
 Вернуть True или False
 Является ли число степенью 2
 """
+from math import sqrt
 
 
 def is_pow_2(number) -> bool:
-    return None
+    while True:
+        number = sqrt(number)
+        if number == 2:
+            return True
+        elif number < 2:
+            break
 
 
 if __name__ == '__main__':
