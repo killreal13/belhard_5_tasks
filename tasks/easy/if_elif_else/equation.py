@@ -59,10 +59,9 @@ def resolve_equation(a: float, b: float, c: float) -> tuple:
         n_var = 2
         return d, n_var, var1, var2
     elif d == 0:
-        var1 = (-b + sqrt(d)) / (2 * a)
-        var2 = (-b - sqrt(d)) / (2 * a)
-        n_var = 2
-        return d, n_var, var1, var2
+        var1 = -b / (2 * a)
+        n_var = 1
+        return d, n_var, var1, None
     else:
         var1 = None
         var2 = None

@@ -35,10 +35,6 @@ def lets_break(n: int) -> int:
             break
         current_n += 1
         counter += 1
-    # Текущее значение
-    current_value = n
-    # Счетчик итераций
-    counter = 0
 
 
 if __name__ == '__main__':

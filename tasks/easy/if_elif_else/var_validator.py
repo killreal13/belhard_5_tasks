@@ -52,7 +52,6 @@ def is_valid(check_string: str) -> bool:
         return True
 
 
-
 if __name__ == '__main__':
     string = input('Введите строку для проверки: ')
     print(f'Результат: {is_valid(string)}')

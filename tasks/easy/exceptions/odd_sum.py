@@ -17,7 +17,8 @@ def odd_sum(int_list: list) -> int:
     for i in range(len(int_list)):
         if not isinstance(int_list[i], int):
             raise TypeError
-        summa += int_list[i]
+        elif int_list[i] % 2 != 0:
+            summa += int_list[i]
     else:
         return summa
 
